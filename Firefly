@@ -47,7 +47,7 @@ while True:
         flash = [image_dict[incoming]*(i/9) for i in range(9, -1, -1)]
 
         # We wait a small amount of time for dramatic effect, 
-        #but we make it random
+        # but we make it random
         sleep(random.randint(50, 350))
 
         # then we display the full animation on the display
