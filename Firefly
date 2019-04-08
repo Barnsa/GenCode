@@ -24,7 +24,7 @@ image_dict = {
 radio.on()
 
 # We also need to set the configuration
-radio.config(channel=1, address=0)
+radio.config(channel=8, address=4)
 
 while True:
 
@@ -40,7 +40,7 @@ while True:
     incoming = radio.receive()
 
     # if the message isn't blank or we're not receiving a signal
-    if incoming != '' and incoming != None:
+    if incoming is not None:
         
         # Then we look in the dictionary to see what image we should display,
         # the last bit creates the additional animation frames to make it fade
